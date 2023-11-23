@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
     it "validar si el email esta presente" do
       should validate_presence_of(:email)     
     end
-    
+   
     it "validar si el password esta presente" do
       should validate_presence_of(:password_digest)   
     end
