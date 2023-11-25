@@ -10,6 +10,11 @@ module V1
                         render json: { errors: @user.errors.messages }, status: :bad_request
                   end
             end
+
+            def login
+
+            end
+
             private
             def user_params
                   params.require(:user).permit(:email, :age, :password)
