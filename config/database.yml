@@ -12,7 +12,7 @@ default: &default
 
 development:
   <<: *default
-  database: store_api_development
+  database: store_api_production
   user: <%= ENV.fetch("DB_USER_PROD")%>
   password: <%= ENV.fetch("DB_PASSWORD_PROD")%>
   host: <%= ENV.fetch("DB_HOST_PROD")%>
