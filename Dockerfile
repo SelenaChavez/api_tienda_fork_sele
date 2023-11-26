@@ -32,3 +32,6 @@ ENTRYPOINT [ "./entrypoints/docker-entrypoints.sh" ]
 USER root
 # Otorga permisos de ejecución al script de entrada
 RUN chmod +x entrypoints/docker-entrypoints.sh
+USER developer
+RUN rails db:create
+RUN rails db:migrate
