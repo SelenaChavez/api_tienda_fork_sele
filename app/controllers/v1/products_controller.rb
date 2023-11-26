@@ -12,6 +12,11 @@ module V1
                         render json: { errors: @product.errors.messages }, status: :bad_request
                   end
             end
+
+            def update
+                  
+            end
+
             private
             def product_params
                   params.require(:product).permit(:name, :description, :price)
