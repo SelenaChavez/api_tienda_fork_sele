@@ -11,8 +11,6 @@ RUN chown -R developer:developer developer
 RUN chmod 755 developer
 # set user 
 USER developer
-# Otorga permisos de ejecución al script de entrada
-RUN chmod +x /entrypoints/docker-entrypoints.sh
 # create folder app
 RUN mkdir -p /home/developer/app
 # set permission to folder
@@ -20,6 +18,8 @@ RUN chown -R developer:developer /home/developer/app
 RUN chmod 755 /home/developer/app
 # use folder app
 WORKDIR /home/developer/app
+# Otorga permisos de ejecución al script de entrada
+RUN chmod +x /entrypoints/docker-entrypoints.sh
 # copy files
 COPY ./Gemfile .
 COPY ./Gemfile.lock .
