@@ -1,6 +1,6 @@
 FROM arm64v8/ruby:3.0-bullseye
 # add user and permissions
-RUN useradd -ms /bin/bash developer
+RUN useradd -S developer
 # create folder developer
 RUN mkdir -p home/developer
 # set folder
