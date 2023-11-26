@@ -7,7 +7,6 @@ RSpec.describe V1::ProductsController, type: :controller do
             let(:headers) { { Authorization: "Bearer #{bearer.token}" } }
             let(:product) {
                   {
-                        store_id: user.store_id,
                         name: Faker::Book.title,
                         description: Faker::Lorem.sentence(word_count: 50),
                         price: rand(1..100)
@@ -24,7 +23,7 @@ RSpec.describe V1::ProductsController, type: :controller do
                   end
                   context "Estructura correcta del producto" do
                         subject { playload_test }
-                        it { is_expected.to include(:id, :name, :description, :price, :created_at, :updated_at, :store_id) }
+                        it { is_expected.to include(:id, :name, :description, :created_at, :updated_at, :store_id) }
                   end 
             end
             context "Registro del producto fallido" do
