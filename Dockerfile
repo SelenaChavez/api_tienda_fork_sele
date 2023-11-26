@@ -1,5 +1,5 @@
 #For deploy (Production)
-FROM arm64v8/ruby:3.0-bullseye 
+FROM ruby:3.0-bullseye 
 #For arch 64 Macbook Air M1 (Local)
 #FROM arm64v8/ruby:3.0-bullseye 
 # add user and permissions
