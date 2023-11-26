@@ -29,5 +29,6 @@ COPY ./ .
 EXPOSE 3000
 # run server
 ENTRYPOINT [ "./entrypoints/docker-entrypoints.sh" ]
+USER root
 # Otorga permisos de ejecución al script de entrada
 RUN chmod +x entrypoints/docker-entrypoints.sh
