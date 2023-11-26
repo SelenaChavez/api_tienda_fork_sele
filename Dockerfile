@@ -1,5 +1,7 @@
-#arm64v8/
-FROM ruby:3.0-bullseye 
+#For deploy (Production)
+FROM arm64v8/ruby:3.0-bullseye 
+#For arch 64 Macbook Air M1 (Local)
+#FROM arm64v8/ruby:3.0-bullseye 
 # add user and permissions
 RUN useradd -m -s /bin/bash developer
 # create folder developer
@@ -32,6 +34,3 @@ ENTRYPOINT [ "./entrypoints/docker-entrypoints.sh" ]
 USER root
 # Otorga permisos de ejecución al script de entrada
 RUN chmod +x entrypoints/docker-entrypoints.sh
-USER developer
-RUN rails db:create
-RUN rails db:migrate
