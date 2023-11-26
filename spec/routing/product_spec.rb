@@ -16,4 +16,11 @@ describe "Rutas de producto" do
                   id: '1'
             )  
       end
+      it 'Ruta index products' do
+            expect(get: '/v1/products').to route_to(
+                  format: 'json',
+                  controller: 'v1/products',
+                  action: 'index'
+            )  
+      end
 end
