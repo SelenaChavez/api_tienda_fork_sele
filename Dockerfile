@@ -12,7 +12,7 @@ RUN chmod 755 developer
 # set user 
 USER developer
 # Otorga permisos de ejecución al script de entrada
-RUN chmod +x entrypoints/docker-entrypoints.sh
+RUN chmod +x /entrypoints/docker-entrypoints.sh
 # create folder app
 RUN mkdir -p /home/developer/app
 # set permission to folder
