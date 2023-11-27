@@ -12,10 +12,10 @@ default: &default
 
 development:
   <<: *default
-  url: <%= ENV["DATABASE_URL"]%>
+  url: <%= ENV["DATABASE_URL"] %>
   database: railwayapp_production
   username: railwayapp
-  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"]%>
+  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
 
 
 test:
@@ -24,8 +24,8 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"]%>
+  url: <%= ENV["DATABASE_URL"] %>
   database: railwayapp_production
   username: railwayapp
-  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"]%>
+  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
 
