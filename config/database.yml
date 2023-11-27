@@ -6,17 +6,13 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV["DATABASE_URL"] %>
-  database: railwayapp_production
-  username: railwayapp
-  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
+  user: <%= ENV.fetch("DB_USER")%>
+  password: <%= ENV.fetch("DB_PASSWORD")%>
+  host: <%= ENV.fetch("DB_HOST")%>
 
 development:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: railwayapp_production
-  username: railwayapp
-  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
+  database: store_api_development
 
 
 test:
@@ -25,8 +21,5 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: railwayapp_production
-  username: railwayapp
-  password: <%= ENV["RAILWAYAPP_DATABASE_PASSWORD"] %>
+  database: store_api_production
 
