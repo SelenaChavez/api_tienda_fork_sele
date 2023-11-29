@@ -9,13 +9,13 @@ Bienvenido a **Store API**, una API desarrollada en Ruby on Rails que gestiona l
 - Creación y administración de pedidos.
 
 ## Documentación
-https://rails-store-api.readme.io
+https://rails-store-api.readme.io 
 
 ## Uso
 ### Requisitos Previos
-- Ruby >= 2.6.3
+- Ruby >= 3.0
 - Rails >= 6.1.0
-- PostgreSQL >= 9.4
+- PostgreSQL >= 13
 
 ### Instalación
 1. Clona este repositorio: `git clone https://github.com/tuusuario/store-api.git`
@@ -23,8 +23,7 @@ https://rails-store-api.readme.io
 3. Configura la base de datos: `rails db:setup`
 
 ### Configuración
-- Copia el archivo de configuración de ejemplo: `cp config/database.yml.example config/database.yml`
-- Personaliza las configuraciones según tu entorno.
+
 
 ### Ejecución
 Ejecuta la aplicación usando el servidor de desarrollo de Rails:
