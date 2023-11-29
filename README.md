@@ -1,24 +1,32 @@
-# README
+# Store API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descripción
+Bienvenido a **Store API**, una API desarrollada en Ruby on Rails que gestiona la información de tiendas, productos y usuarios. Esta API está diseñada para ser utilizada en aplicaciones de comercio electrónico.
 
-Things you may want to cover:
+## Características Principales
+- Gestión de tiendas y productos.
+- Autenticación de usuarios.
+- Creación y administración de pedidos.
 
-* Ruby version
+## Documentación
+https://rails-store-api.readme.io
 
-* System dependencies
+## Uso
+### Requisitos Previos
+- Ruby >= 2.6.3
+- Rails >= 6.1.0
+- PostgreSQL >= 9.4
 
-* Configuration
+### Instalación
+1. Clona este repositorio: `git clone https://github.com/tuusuario/store-api.git`
+2. Instala las dependencias: `bundle install`
+3. Configura la base de datos: `rails db:setup`
 
-* Database creation
+### Configuración
+- Copia el archivo de configuración de ejemplo: `cp config/database.yml.example config/database.yml`
+- Personaliza las configuraciones según tu entorno.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Ejecución
+Ejecuta la aplicación usando el servidor de desarrollo de Rails:
+```bash
+rails server

@@ -18,7 +18,7 @@ module V1
                         @token = @user.tokens.create
                         render :show
                   else 
-                        render( json: { errors: I18n.t('user.bad_credentials') }, status: :bad_request )
+                        render json: { errors: I18n.t('user.bad_credentials') }, status: :bad_request 
                   end
             end
 
