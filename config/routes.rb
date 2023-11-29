@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-
+  root to: "home#index"
   scope '(:locale)', locale: /es|en/ do 
     get 'home/grettings'
     namespace :v1, defaults: { format: 'json' } do
