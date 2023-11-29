@@ -24,7 +24,8 @@ module V1
 
             private
             def login_params
-                   params.require(:user).permit(:email, :password)
+                   #params.require(:user).permit(:email, :password)
+                   params.permit(:email, :password)
             end
             def user_params
                   params.require(:user).permit(:email, :age, :password, store_attributes: %i[name])
