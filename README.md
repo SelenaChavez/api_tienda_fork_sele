@@ -1,5 +1,5 @@
 # Store API
-
+# HOLA, SOY SELE
 ## Descripción
 Bienvenido a **Store API**, una API desarrollada en Ruby on Rails que gestiona la información de tiendas, productos y usuarios. Esta API está diseñada para ser utilizada en aplicaciones de comercio electrónico.
 
